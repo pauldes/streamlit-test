@@ -6,7 +6,6 @@ st.title('Demo streamlit application')
 label_lowercaser = "Lowercaser"
 label_uppercaser = "Uppercaser"
 
-
 # Sidebar
 selectbox = st.sidebar.selectbox(
     "Select a version...",
@@ -16,7 +15,6 @@ radio = st.sidebar.radio(
     "Select a text transformer...",
     (label_lowercaser, label_uppercaser)
 )
-
 
 # Content
 st.header(radio)
@@ -30,7 +28,7 @@ if radio==label_lowercaser:
     res = str(input_text).lower()
 else:
     res = str(input_text).upper()
-st.write(f'Trasnformed text : {res}')
+st.write(f'Transformed text : {res}')
 st.write("Confidence : 80%")
 st.progress(80)
 age = st.slider('How old are you?', 0, 100, 25)
