@@ -23,7 +23,7 @@ This is a demo. For creating the app,
 we used [Streamlit](https://streamlit.io/).
 ''')
 st.subheader(f"{radio} | {selectbox}")
-input_text = st.text_input(label='Type some text.', value='Whazzup')
+input_text = st.text_input(label='Type some text.', value='This is an example of text.')
 if radio==label_lowercaser:
     res = str(input_text).lower()
 else:
